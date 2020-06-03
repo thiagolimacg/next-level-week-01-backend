@@ -44,7 +44,9 @@ class PointsControlle {
         
         //full sintaxe, ex: name(propriedade): name(variável), email: email
         //short sintaxe, é possível utilizar quando o nome da variável é igual ao nome da propriedade do objeto
-        const point = { image: 'image-fake', name, email, whatsapp, latitude, longitude, city, uf }
+        const point = { 
+            image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60-fake', 
+            name, email, whatsapp, latitude, longitude, city, uf }
     
         const insertedIds = await trx('points').insert(point);
     
